@@ -155,9 +155,9 @@ while (iter != mid)
 
 It's a endless loop. `iter` never equal `mid`.
 
-FIXED: (changed the `while` loop)
+FIXED: (changed the `insert` sentence)
 ```
-while (iter++ != mid)
+iter = iv.insert(iter, 2 * some_val);
 ```
 
 ## Exercise 9.23:
