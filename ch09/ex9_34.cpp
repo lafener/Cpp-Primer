@@ -22,8 +22,11 @@ int main()
     auto iter = vi.begin(); 
     while (iter != vi.end())
     {    
-        if (*iter % 2)        
-            iter = vi.insert(iter, *iter++);    
+        if (*iter % 2)
+        {
+            iter = vi.insert(iter, *iter);
+            ++iter;
+        }
         ++iter;
     }
     
